@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunMC</title>
+    <style>
+        body {
+            background-color: #cce5ff; /* Bluish background */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #welcome-animation {
+            text-align: center;
+            padding: 100px;
+            animation: fadeIn 2s ease-out; /* You can define the fadeIn animation */
+        }
+        #options-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .option-button {
+            background-color: #4CAF50; /* Green button color */
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        #vote-link {
+            text-align: center;
+            padding: 20px;
+        }
+        #discord-link {
+            text-align: center;
+            padding: 20px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome-animation">
+        <h1>Welcome to FunMC!</h1>
+        <!-- Add your welcome animation content here -->
+    </div>
+    <div id="options-container">
+        <a href="#smp" class="option-button">SMP</a>
+        <a href="#skyblock" class="option-button">Skyblock</a>
+    </div>
+    <div id="vote-link">
+        <p>Don't forget to vote for us!</p>
+        <!-- Add your vote link here -->
+    </div>
+    <div id="discord-link">
+        <p>Join our Discord community!</p>
+        <!-- Add your Discord server link here -->
+    </div>
+</body>
+</html>
