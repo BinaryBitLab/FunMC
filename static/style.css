@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    /* CSS HEX */
+    --zeus: #1f1b18;
+    --mountain-mist: #959398;
+    --fedora: #686568;
+    --jumbo: #7f7c84;
+    --gravel: #4c474e;
+    --tundora: #403d3f;
+    --thunder: #3c3237;
+    --pesto: #877138;
+    --irish-coffee: #5d3f28;
+    font-family: 'Lato';
+    box-sizing: border-box;
+}
+body {
+    background-color: #cce5ff; /* Bluish background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(/assest/Background.png);
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Navbar Design  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5% 20px 5%;
+}
+.brand {
+    cursor: pointer;
+    font-size: 22.5px;
+}
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 17px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1f1b1862;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    background-color: var(--zeus);
+}
+#welcome-animation {
+    text-align: center;
+    padding: 100px;
+    animation: fadeIn 2s ease-out; /* You can define the fadeIn animation */
+}
+#options-container {
+    text-align: center;
+    padding: 20px;
+}
+.option-button {
+    background-color: #4CAF50; /* Green button color */
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#vote-link {
+    text-align: center;
+    padding: 20px;
+}
+#discord-link {
+    text-align: center;
+    padding: 20px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
