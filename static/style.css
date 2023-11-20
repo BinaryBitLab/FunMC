@@ -17,7 +17,7 @@ body {
     background-color: #cce5ff; /* Bluish background */
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url(/assest/Background.png);
+    background-image: url(assest/Background.png);
     background-size: cover;
     color: #ffffff;
 }
