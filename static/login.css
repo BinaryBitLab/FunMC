@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    /* CSS HEX */
+    --zeus: #1f1b18;
+    --mountain-mist: #959398;
+    --fedora: #686568;
+    --jumbo: #7f7c84;
+    --gravel: #4c474e;
+    --tundora: #403d3f;
+    --thunder: #3c3237;
+    --pesto: #877138;
+    --irish-coffee: #5d3f28;
+    font-family: 'Lato';
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    border-radius: 15px;
+}
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    color: #ffffff;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+    color: #ffffff;
+}
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.wrapper .remember {
+    display: flex;
+    font-size: 15px;
+    margin: -15px 0px 15px;
+}
+.remember label input {
+    accent-color: #ffffff;
+    margin-right: 3px;
+}
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--thunder);
+    font-weight: 600;
+}
+.wrapper .note {
+    font-size: 15px;
+    color: #d3d1d1;
+    text-align: center;
+    margin: 20px 0px 15px;
+}
+.note p a {
+    font-weight: 600;
+}
