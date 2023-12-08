@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/store.css">
     <title>FunMC</title>
 </head>
 <body>
@@ -23,25 +24,14 @@
     <div class="head1">
         <h1>SMP Store!</h1>
     </div>
-    <div id="options-container">
-        <a href="#smp" class="option-button">SMP</a>
-        <a href="#skyblock" class="option-button">Skyblock</a>
-    </div>
-    <div id="vote-link">
-        <p>Don't forget to vote for us!</p>
-        <!-- Add your vote link here -->
-    </div>
-    <div id="discord-link">
-        <p>Join our Discord community!</p>
-        <!-- Add your Discord server link here -->
-    </div>
     <!-- Dropdown (select) with options -->
-    <label for="content-select">Select Content:</label>
-    <select id="content-select" onchange="showContent()">
-        <option value="none">Select an option</option>
-        <option value="ranks">Ranks</option>
-        <option value="keys">Keys</option>
-    </select>
+    <div class="select-menu">
+        <select class="content-select" onchange="showContent()">
+            <option value="none" selected>Select Category</option>
+            <option value="ranks">Ranks</option>
+            <option value="keys">Keys</option>
+        </select>
+    </div>
 
     <!-- Container to hold dynamic content -->
     <div id="content-container">
