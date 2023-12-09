@@ -1,12 +1,47 @@
-.select-menu {
-    margin: 20px;
-    padding: 10px 30px;
+.wrapper {
+    display: flex;
 }
-.content-select {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.side-nav {
+    margin-left: 40px;
+    margin-bottom: 50px;
+    width: 250px;
+    background-color: #1f1b183b;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+.select-menu {
+    padding: 10px 20px;
+    justify-content: center;
+    text-align: center;
+}
+.select-menu ul {
+    padding: 0px;
+    position: relative;
+}
+.select-menu ul li {
+    list-style: none;
+    padding: 15px 0px;
+    font-size: 17px;
+}
+.select-menu ul li a {
+    text-decoration: none;
     padding: 10px 20px;
     color: white;
-    background-color: transparent;
-    border-radius: 25px;
-    outline: none;
+    transition: all 0.3s ease 0s;
+}
+.select-menu ul li a:hover {
+    background-color: #362f2a;
+    border-radius: 5px;
+}
+.content {
+    margin: 0px 40px 50px 10px;
+    width: 100%;
+    background-color: #1f1b183b;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+.content div {
+    padding: 20px 20px;
 }

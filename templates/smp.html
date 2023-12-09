@@ -24,50 +24,58 @@
     <div class="head1">
         <h1>SMP Store!</h1>
     </div>
-    <!-- Dropdown (select) with options -->
-    <div class="select-menu">
-        <select class="content-select" onchange="showContent()">
-            <option value="none" selected>Select Category</option>
-            <option value="ranks">Ranks</option>
-            <option value="keys">Keys</option>
-        </select>
+    <div class="wrapper">
+        <section class="side-nav">
+            <div class="select-menu">
+                <h1>Category:</h1>
+                <ul>
+                    <li><a href="#">Ranks</a></li>
+                    <li><a href="#">Keys</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">Kits</a></li>
+                    <li><a href="#">Tags</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="content">
+            <div class="ranks">
+                <h1>These are Ranks</h1>
+            </div>
+            <div class="keys">
+                <h1>These are Keys</h1>
+            </div>
+            <div class="tools">
+                <h1>These are Tools</h1>
+            </div>
+            <div class="kits">
+                <h1>These are Kits</h1>
+            </div>
+            <div class="tags">
+                <h1>These are Tags</h1>
+            </div>
+        </section>
     </div>
-
-    <!-- Container to hold dynamic content -->
-    <div id="content-container">
-        <!-- Content related to Ranks, initially hidden -->
-        <div id="ranks-content" class="hidden">
-            <h2>Ranks Content</h2>
-            <!-- Add your content related to ranks here -->
-        </div>
-
-        <!-- Content related to Keys, initially hidden -->
-        <div id="keys-content" class="hidden">
-            <h2>Keys Content</h2>
-            <!-- Add your content related to keys here -->
-        </div>
-    </div>
-
-    <!-- JavaScript for dynamic content -->
     <script>
-        // JavaScript function to show/hide content based on selection
-        function showContent() {
-            // Get necessary elements by ID
-            var selectElement = document.getElementById("content-select");
-            var ranksContent = document.getElementById("ranks-content");
-            var keysContent = document.getElementById("keys-content");
+        // Get references to the side navigation and content elements
+        const sideNav = document.querySelector('.select-menu ul');
+        const contentSections = document.querySelectorAll('.content > div');
 
-            // Hide all content initially
-            ranksContent.classList.add("hidden");
-            keysContent.classList.add("hidden");
+        // Add a click event listener to the side navigation
+        sideNav.addEventListener('click', function (event) {
+            // Prevent the default behavior of the link
+            event.preventDefault();
 
-            // Show content based on selection
-            if (selectElement.value === "ranks") {
-                ranksContent.classList.remove("hidden");
-            } else if (selectElement.value === "keys") {
-                keysContent.classList.remove("hidden");
+            // Check if the clicked element is a link
+            if (event.target.tagName === 'A') {
+                // Get the text content of the clicked link
+                const selectedOption = event.target.textContent;
+
+                // Show the corresponding content section and hide others
+                contentSections.forEach(section => {
+                    section.style.display = section.classList.contains(selectedOption.toLowerCase()) ? 'block' : 'none';
+                });
             }
-        }
+        });
     </script>
 </body>
 </html>
