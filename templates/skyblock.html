@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/store.css">
     <title>FunMC</title>
 </head>
 <body>
@@ -23,61 +24,162 @@
     <div class="head1">
         <h1>Skyblock Store!</h1>
     </div>
-    <div id="options-container">
-        <a href="#smp" class="option-button">SMP</a>
-        <a href="#skyblock" class="option-button">Skyblock</a>
-    </div>
-    <div id="vote-link">
-        <p>Don't forget to vote for us!</p>
-        <!-- Add your vote link here -->
-    </div>
-    <div id="discord-link">
-        <p>Join our Discord community!</p>
-        <!-- Add your Discord server link here -->
-    </div>
-    <!-- Dropdown (select) with options -->
-    <label for="content-select">Select Content:</label>
-    <select id="content-select" onchange="showContent()">
-        <option value="none">Select an option</option>
-        <option value="ranks">Ranks</option>
-        <option value="keys">Keys</option>
-    </select>
-
-    <!-- Container to hold dynamic content -->
-    <div id="content-container">
-        <!-- Content related to Ranks, initially hidden -->
-        <div id="ranks-content" class="hidden">
-            <h2>Ranks Content</h2>
-            <!-- Add your content related to ranks here -->
-        </div>
-
-        <!-- Content related to Keys, initially hidden -->
-        <div id="keys-content" class="hidden">
-            <h2>Keys Content</h2>
-            <!-- Add your content related to keys here -->
-        </div>
-    </div>
-
-    <!-- JavaScript for dynamic content -->
-    <script>
-        // JavaScript function to show/hide content based on selection
-        function showContent() {
-            // Get necessary elements by ID
-            var selectElement = document.getElementById("content-select");
-            var ranksContent = document.getElementById("ranks-content");
-            var keysContent = document.getElementById("keys-content");
-
-            // Hide all content initially
-            ranksContent.classList.add("hidden");
-            keysContent.classList.add("hidden");
-
-            // Show content based on selection
-            if (selectElement.value === "ranks") {
-                ranksContent.classList.remove("hidden");
-            } else if (selectElement.value === "keys") {
-                keysContent.classList.remove("hidden");
-            }
-        }
-    </script>
+    <div class="wrapper">
+        <section class="side-nav">
+            <div class="select-menu">
+                <h1>Category:</h1>
+                <ul>
+                    <li><a href="#">Ranks</a></li>
+                    <li><a href="#">Tags</a></li>
+                    <li><a href="#">Particles</a></li>
+                    <li><a href="#">Pets</a></li>
+                    <li><a href="#">Capes</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="content">
+            <div class="default-content">
+                <h1>Welcome to FunMC SMP Store!</h1>
+                <p>Explore and enhance your gaming experience with our exclusive items.</p>
+                <p>Check out the categories on the left to see what's available!</p>
+            </div>
+            <div class="ranks content-section">
+                <h1>Ranks</h1>
+                <p>Unlock powerful abilities with our premium ranks. Choose your level of greatness!</p>
+                <div class="vip item">
+                    <h2>VIP</h2>
+                    <p>Unlock VIP status and enjoy exclusive perks.</p>
+                    <p>Price: $10</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+                <div class="mvp item">
+                    <h2>MVP</h2>
+                    <p>Upgrade to MVP and stand out among the players.</p>
+                    <p>Price: $20</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+                <div class="vampire item">
+                    <h2>Vampire</h2>
+                    <p>Embrace the darkness with the Vampire rank.</p>
+                    <p>Price: $30</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+                <div class="demon item">
+                    <h2>Demon</h2>
+                    <p>Unleash the power of darkness with the Demon rank. Rule the underworld and command supernatural abilities.</p>
+                    <p>Price: $50</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+                <div class="demi-god item">
+                    <h2>Demigod</h2>
+                    <p>Ascend to demigod status and wield incredible strength and divine powers. Conquer challenges like a true demigod!</p>
+                    <p>Price: $75</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+                <div class="God item">
+                    <h2>God</h2>
+                    <p>Become a deity of the server with the God rank. Command respect and shape the destiny of the virtual realm.</p>
+                    <p>Price: $100</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="tags content-section">
+                <h1>Tags</h1>
+                <p>Personalize your profile with unique tags. Make a statement!</p>
+                <div class="random tag">
+                    <h2>Random Tag</h2>
+                    <p>Get a random tag to show your friends.</p>
+                    <p>Price: $5</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+                <div class="legendary tag">
+                    <h2>Legendary Tag</h2>
+                    <p>Stand out with a legendary tag that catches everyone's attention.</p>
+                    <p>Price: $10</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+                <div class="customizable tag">
+                    <h2>Customizable Tag</h2>
+                    <p>Personalize your profile with a unique customizable tag.</p>
+                    <p>Price: $20</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="particles content-section">
+                <h1>Particles</h1>
+                <p>Add flair to your gameplay with custom particles.</p>
+                <div class="fire particle">
+                    <h2>Fire Particle</h2>
+                    <p>Add flair to your gameplay with fiery particle effects.</p>
+                    <p>Price: $8</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+                <div class="magic particle">
+                    <h2>Magic Particle</h2>
+                    <p>Enchant your surroundings with mystical magic particles.</p>
+                    <p>Price: $12</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="pets content-section">
+                <h1>Pets</h1>
+                <p>Adopt a companion to join you on your SMP adventures.</p>
+                <div class="wolf pet">
+                    <h2>Loyal Wolf Companion</h2>
+                    <p>Adopt a loyal wolf companion to accompany you on your SMP adventures.</p>
+                    <p>Price: $15</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+                <div class="dargon pet">
+                    <h2>Mystical Dargon Pet</h2>
+                    <p>Own a mystical dragon pet that breathes excitement into your gameplay.</p>
+                    <p>Price: $25</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="capes content-section">
+                <h1>Capes</h1>
+                <p>Show off your style with a custom cape.</p>
+                <div class="heroic cape">
+                    <h2>Heroic Cape</h2>
+                    <p>Show off your heroism with a custom heroic cape.</p>
+                    <p>Price: $100</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+                <div class="dragon cape">
+                    <h2>Legendary Dragon Cape</h2>
+                    <p>Soar through the skies with a legendary dragon-themed cape.</p>
+                    <p>Price: $30</p>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+        </section>
+    
+        <script>
+            // Get references to the side navigation and content elements
+            const sideNav = document.querySelector('.select-menu ul');
+            const contentSections = document.querySelectorAll('.content > .content-section');
+    
+            // Add a click event listener to the side navigation
+            sideNav.addEventListener('click', function (event) {
+                // Prevent the default behavior of the link
+                event.preventDefault();
+    
+                // Check if the clicked element is a link
+                if (event.target.tagName === 'A') {
+                    // Get the text content of the clicked link
+                    const selectedOption = event.target.textContent;
+    
+                    // Show the corresponding content section and hide others
+                    contentSections.forEach(section => {
+                        if (section.classList.contains(selectedOption.toLowerCase())) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        </script>
 </body>
 </html>

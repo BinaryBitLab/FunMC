@@ -1,47 +1,80 @@
+/* Updated CSS for better showcase */
+
+/* Flex display for wrapper */
 .wrapper {
     display: flex;
+    justify-content: space-between;
 }
+
+/* Adjusted styling for side navigation */
 .side-nav {
     margin-left: 40px;
     margin-bottom: 50px;
     width: 250px;
     background-color: #1f1b183b;
+    height: 100%;
     backdrop-filter: blur(5px);
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
 }
+
+/* Centered and styled select menu */
 .select-menu {
     padding: 10px 20px;
-    justify-content: center;
     text-align: center;
 }
+
 .select-menu ul {
     padding: 0px;
-    position: relative;
 }
+
 .select-menu ul li {
     list-style: none;
     padding: 15px 0px;
     font-size: 17px;
 }
+
 .select-menu ul li a {
     text-decoration: none;
     padding: 10px 20px;
-    color: white;
-    transition: all 0.3s ease 0s;
+    color: #fff;
+    transition: all 0.3s ease;
 }
+
 .select-menu ul li a:hover {
     background-color: #362f2a;
     border-radius: 5px;
 }
+
+/* Improved styling for content */
 .content {
     margin: 0px 40px 50px 10px;
-    width: 100%;
-    background-color: #1f1b183b;
-    backdrop-filter: blur(5px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    width: calc(100% - 250px);
     border-radius: 15px;
+    overflow: auto;
 }
+
+/* Styled showcase items */
 .content div {
-    padding: 20px 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #1f1b183b;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+}
+
+/* Improved button styling */
+.content div button {
+    padding: 10px 20px;
+    background-color: #362f2a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content div button:hover {
+    background-color: #544b46;
 }
