@@ -53,7 +53,9 @@
     border-radius: 15px;
     overflow: auto;
 }
-
+h1 {
+    text-align: center;
+}
 /* Styled showcase items */
 .content div {
     padding: 20px;
